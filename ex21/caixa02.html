@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: rgb(90, 90, 90);
+        }
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+        main {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;       
+            margin: 10px;
+            border-radius: 0px 20px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.479);
+        }
+        section#noticias {
+            background-color: rgb(155, 155, 155);
+            padding: 10px;
+            border-radius: 10px;
+        }
+        article > aside {
+            background-color: rgb(95, 95, 95);
+            color: aliceblue;
+            border-radius: 10px;
+            text-align: center;
+        }
+        footer {
+            background-color: rgb(107, 107, 107);
+            color: aliceblue;
+            text-align: center;
+            margin: 10px;
+            padding: 1px;
+            border-radius: 10px;
+        }
+        nav {
+            background-color: rgb(63, 63, 63);
+            padding: 4px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.493);
+            border-radius: 10px;
+        }
+        nav > a{
+            text-decoration: none;
+            margin-right: 10px;
+            color: white;
+            font-weight: bold;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            color: rgb(43, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Politica Culinaria</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo voluptate fugiat commodi incidunt repellendus natus ea mollitia impedit. Neque quasi officiis voluptatum culpa, ut ipsam doloribus iste in esse praesentium.</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Matheus Santos</p>
+    </footer>
+</body>
+</html>
