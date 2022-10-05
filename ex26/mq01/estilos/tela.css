@@ -12,15 +12,15 @@ html {
     font-size: 1em;
 }
 
+h1 {
+   background-color: rgb(77, 77, 77);
+   color: white;
+   text-align: center;
+}
 header > menu{
     background-color: grey;
 
 }
- menu > h1 {
-    background-color: rgb(77, 77, 77);
-    color: white;
-    text-align: center;
- }
  menu ul {
     list-style-type: none;
  }
