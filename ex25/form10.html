@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="ano">Em que ano você nasceu?</label>
+            <input type="number" name="ano" id="ano" min="1900" max="2022" oninput="calcular()">
+        </p>
+        <p>
+            <label for="ival">Idade:</label>
+            <output id="ival">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    <script>
+        function calcular() {
+            var atual = new Date().getFullYear()
+            ival.innerHTML = Number(atual) - Number(ano.value)
+        }
+    </script>
+</body>
+</html>
