@@ -31,10 +31,12 @@ span#burguer {
 span#burguer:hover {
     background-color: white;
     color: rgb(65, 65, 65);
+    user-select: none;
 }
 
 menu {
     display: none;
+    user-select: none;
 }
 
 menu > ul {
